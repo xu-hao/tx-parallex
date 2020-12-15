@@ -24,7 +24,7 @@ def import_module_reload(module_name):
         importlib.reload(mod)
         return mod
     else:
-        importlib.import_module(mod)
+        return importlib.import_module(module_name)
     
     
 def to_mod(value: ast.expr) -> str:
